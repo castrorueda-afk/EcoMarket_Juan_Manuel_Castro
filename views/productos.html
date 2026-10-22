@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoMarket - Catálogo de Productos</title>
+  
+  <!-- Cargar estilos usando ../ para salir de la carpeta views -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <a href="../index.html" class="logo">🌱 EcoMarket</a>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="../index.html" class="nav-link">Inicio</a></li>
+        <li><a href="productos.html" class="nav-link active">Productos</a></li>
+        <li><a href="sobre-nosotros.html" class="nav-link">Nosotros</a></li>
+        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="#" title="Buscar">🔍</a>
+      <a href="#" title="Carrito">🛒</a>
+    </div>
+  </header>
+
+  <!-- Contenedor del Catálogo -->
+  <div class="catalog-container">
+    
+    <!-- Sidebar de Filtros (Sticky) -->
+    <aside class="sidebar-filters">
+      <h3>Filtros</h3>
+      <br>
+      <h4>Categorías</h4>
+      <ul>
+        <li><label><input type="checkbox" checked> Hogar</label></li>
+        <li><label><input type="checkbox"> Moda</label></li>
+        <li><label><input type="checkbox"> Cuidado Personal</label></li>
+        <li><label><input type="checkbox"> Alimentos</label></li>
+      </ul>
+      <br>
+      <h4>Disponibilidad</h4>
+      <ul>
+        <li><label><input type="checkbox"> En Stock</label></li>
+      </ul>
+    </aside>
+
+    <!-- Área Principal de Productos -->
+    <main>
+      <div style="margin-bottom: 1.5rem;">
+        <input type="text" class="form-input" placeholder="🔍 Buscar productos ecológicos..." style="width: 100%;">
+      </div>
+
+      <div class="products-grid">
+
+        <article class="product-card">
+          <span class="product-badge">Biodegradable</span>
+          <img src="../img/products/bamboo-brush.jpg" alt="Producto" onerror="this.src='https://via.placeholder.com/300x200?text=Cepillo+Bamb%C3%BA'">
+          <h3 style="margin-top: 0.8rem; font-size: 1.1rem;">Cepillo de Bambú</h3>
+          <p style="font-weight: bold; color: var(--primary-green); margin: 0.4rem 0;">$12.00 USD</p>
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+            <button class="btn btn-primary" style="flex: 1;">Añadir</button>
+            <button class="btn-fav" title="Favorito">❤️</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <span class="product-badge">BPA Free</span>
+          <img src="../img/products/silicone-bags.jpg" alt="Producto" onerror="this.src='https://via.placeholder.com/300x200?text=Bolsas+Silicona'">
+          <h3 style="margin-top: 0.8rem; font-size: 1.1rem;">Bolsas de Silicona</h3>
+          <p style="font-weight: bold; color: var(--primary-green); margin: 0.4rem 0;">$24.50 USD</p>
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+            <button class="btn btn-primary" style="flex: 1;">Añadir</button>
+            <button class="btn-fav" title="Favorito">❤️</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <span class="product-badge">Algodón Orgánico</span>
+          <img src="../img/products/cotton-bags.jpg" alt="Producto" onerror="this.src='https://via.placeholder.com/300x200?text=Bolsas+Malla'">
+          <h3 style="margin-top: 0.8rem; font-size: 1.1rem;">Bolsas de Malla</h3>
+          <p style="font-weight: bold; color: var(--primary-green); margin: 0.4rem 0;">$18.00 USD</p>
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+            <button class="btn btn-primary" style="flex: 1;">Añadir</button>
+            <button class="btn-fav" title="Favorito">❤️</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <span class="product-badge">Sin Plástico</span>
+          <img src="../img/products/shampoo-bar.jpg" alt="Producto" onerror="this.src='https://via.placeholder.com/300x200?text=Shampoo+S%C3%B3lido'">
+          <h3 style="margin-top: 0.8rem; font-size: 1.1rem;">Shampoo Sólido</h3>
+          <p style="font-weight: bold; color: var(--primary-green); margin: 0.4rem 0;">$14.00 USD</p>
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+            <button class="btn btn-primary" style="flex: 1;">Añadir</button>
+            <button class="btn-fav" title="Favorito">❤️</button>
+          </div>
+        </article>
+      </div>
+
+
+      <div style="display: flex; justify-content: center; gap: 0.5rem; margin-top: 2rem;">
+        <a href="#" class="btn" style="border: 1px solid var(--gray-border);">Anterior</a>
+        <a href="#" class="btn btn-primary">1</a>
+        <a href="#" class="btn" style="border: 1px solid var(--gray-border);">2</a>
+        <a href="#" class="btn" style="border: 1px solid var(--gray-border);">Siguiente</a>
+      </div>
+    </main>
+
+  </div>
+
+
+  <footer class="main-footer">
+    <div class="footer-bottom">
+      <p>&copy; 2026 EcoMarket Inc. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
