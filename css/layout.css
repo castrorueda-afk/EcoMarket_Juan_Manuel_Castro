@@ -123,3 +123,60 @@
   max-width: 68rem;
   margin-inline: auto;
 }
+/* ==========================================================
+   CATÁLOGO: encabezado a ancho completo arriba del layout
+   ========================================================== */
+
+/* El contenedor pasa a ser una columna: hero arriba, layout debajo */
+main.catalog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+  box-sizing: border-box;
+}
+
+/* Si tu CSS anterior lo definía como grid, esto lo hace ocupar toda la fila */
+main.catalog-container > .catalog-hero {
+  grid-column: 1 / -1;
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 2rem;
+  padding: 3rem 1.5rem 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.catalog-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  line-height: 1.2;
+  margin: 0 0 .75rem;
+  color: #1b5e20;
+}
+
+.catalog-hero p {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+/* Layout: sidebar + productos, ahora debajo del hero */
+main.catalog-container > .catalog-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  main.catalog-container > .catalog-layout {
+    grid-template-columns: 1fr;
+  }
+}
