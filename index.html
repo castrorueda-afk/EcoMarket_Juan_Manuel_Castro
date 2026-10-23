@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoMarket - Inicio | Productos Sostenibles</title>
-  
-cd EcoMarket
+  <title>EcoMarket - Tienda Ecológica y Sostenible</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/animations.css">
 </head>
-<body>
+<body class="home-page">
 
+  <!-- Encabezado / Navegación -->
   <header class="main-header">
     <a href="index.html" class="logo">🌱 EcoMarket</a>
     <nav>
@@ -23,109 +22,103 @@ cd EcoMarket
         <li><a href="views/contacto.html" class="nav-link">Contacto</a></li>
       </ul>
     </nav>
-    <div class="header-actions">
-      <a href="views/productos.html" title="Buscar">🔍</a>
-      <a href="#" title="Carrito">🛒</a>
-    </div>
   </header>
 
-
-  <section class="hero-banner">
-    <h1 class="hero-title">Compra responsable, vive sostenible</h1>
-    <p>Descubre productos reutilizables, ecológicos y éticos para tu día a día.</p>
-    <br>
-    <a href="views/productos.html" class="btn btn-primary">Explorar productos</a>
-  </section>
-
-
-  <main style="padding: 3rem 2rem; max-width: 1200px; margin: 0 auto;">
-    <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-green);">Productos Destacados</h2>
+  <main class="main-home-container">
     
-    <div class="products-grid">
+    <!-- Hero Banner -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Cuidar el planeta empieza con pequeñas decisiones</h1>
+        <p>Descubre nuestra línea de productos ecológicos, biodegradables y reutilizables para un estilo de vida más consciente.</p>
+        <div class="hero-buttons">
+          <a href="views/productos.html" class="btn-hero-primary">Explorar Catálogo</a>
+          <a href="views/sobre-nosotros.html" class="btn-hero-secondary">Conocer Más</a>
+        </div>
+      </div>
+    </section>
 
-      <article class="product-card">
-        <span class="product-badge">Ecológico</span>
-        <img src="img/products/bamboo-brush.jpg" alt="Cepillo de Bambú" onerror="this.src='https://via.placeholder.com/300x200?text=Cepillo+Bamb%C3%BA'">
-        <h3 style="margin-top: 0.8rem;">Cepillo de Bambú (Pack x4)</h3>
-        <p style="font-size: 0.9rem; color: #666;">Cerdas infusionadas con carbón activo. 100% biodegradable.</p>
-        <p style="font-weight: bold; margin: 0.5rem 0; color: var(--primary-green);">$12.00 USD</p>
-        <a href="views/productos.html" class="btn btn-primary" style="width: 100%; display: block;">Ver más</a>
-      </article>
+    <!-- Productos Destacados -->
+    <section class="featured-products-section">
+      <h2 class="featured-title">Productos Destacados</h2>
+      
+      <div class="home-product-grid">
 
+        <!-- Producto 1 -->
+        <article class="product-card">
+          <a href="views/detalle-producto.html">
+            <img src="img/products/cepillo de bambu.jpg" alt="Cepillo de Bambú" class="product-img">
+          </a>
+          <div class="product-info">
+            <span class="product-tag">Cuidado Personal</span>
+            <h3><a href="views/detalle-producto.html" class="product-title-link">Cepillo de Bambú</a></h3>
+            <p class="product-price">$12.000 COP</p>
+            <div class="card-buttons">
+              <a href="views/detalle-producto.html" class="btn-secondary">Ver detalle</a>
+              <a href="views/contacto.html" class="btn-primary">Solicitar</a>
+            </div>
+          </div>
+        </article>
 
-      <article class="product-card">
-        <span class="product-badge">Reutilizable</span>
-        <img src="img/products/cotton-bags.jpg" alt="Bolsas de Malla" onerror="this.src='https://via.placeholder.com/300x200?text=Bolsas+de+Malla'">
-        <h3 style="margin-top: 0.8rem;">Bolsas de Malla de Algodón</h3>
-        <p style="font-size: 0.9rem; color: #666;">Set de 5 bolsas lavables para compras de frutas y verduras.</p>
-        <p style="font-weight: bold; margin: 0.5rem 0; color: var(--primary-green);">$18.00 USD</p>
-        <a href="views/productos.html" class="btn btn-primary" style="width: 100%; display: block;">Ver más</a>
-      </article>
+        <!-- Producto 2 -->
+        <article class="product-card">
+          <a href="views/detalle-producto.html">
+            <img src="img/products/shampoo solido natural.jpg" alt="Shampoo Sólido Natural" class="product-img">
+          </a>
+          <div class="product-info">
+            <span class="product-tag">Cuidado Personal</span>
+            <h3><a href="views/detalle-producto.html" class="product-title-link">Shampoo Sólido Natural</a></h3>
+            <p class="product-price">$25.000 COP</p>
+            <div class="card-buttons">
+              <a href="views/detalle-producto.html" class="btn-secondary">Ver detalle</a>
+              <a href="views/contacto.html" class="btn-primary">Solicitar</a>
+            </div>
+          </div>
+        </article>
 
+        <!-- Producto 3 -->
+        <article class="product-card">
+          <a href="views/detalle-producto.html">
+            <img src="img/products/Detergente Ecológico en Hojas.png" alt="Detergente Ecológico" class="product-img">
+          </a>
+          <div class="product-info">
+            <span class="product-tag">Hogar</span>
+            <h3><a href="views/detalle-producto.html" class="product-title-link">Detergente en Hojas</a></h3>
+            <p class="product-price">$28.000 COP</p>
+            <div class="card-buttons">
+              <a href="views/detalle-producto.html" class="btn-secondary">Ver detalle</a>
+              <a href="views/contacto.html" class="btn-primary">Solicitar</a>
+            </div>
+          </div>
+        </article>
 
-      <article class="product-card">
-        <span class="product-badge">Zero Waste</span>
-        <img src="img/products/shampoo-bar.jpg" alt="Shampoo Sólido" onerror="this.src='https://via.placeholder.com/300x200?text=Shampoo+S%C3%B3lido'">
-        <h3 style="margin-top: 0.8rem;">Shampoo Sólido de Cítricos</h3>
-        <p style="font-size: 0.9rem; color: #666;">Ahorra hasta 3 botellas plásticas. Rinde hasta 80 lavados.</p>
-        <p style="font-weight: bold; margin: 0.5rem 0; color: var(--primary-green);">$14.00 USD</p>
-        <a href="views/productos.html" class="btn btn-primary" style="width: 100%; display: block;">Ver más</a>
-      </article>
+        <!-- Producto 4 -->
+        <article class="product-card">
+          <a href="views/detalle-producto.html">
+            <img src="img/products/Botella Térmica de Acero Inoxidable.webp" alt="Botella Térmica" class="product-img">
+          </a>
+          <div class="product-info">
+            <span class="product-tag">Estilo de Vida</span>
+            <h3><a href="views/detalle-producto.html" class="product-title-link">Botella Térmica de Acero</a></h3>
+            <p class="product-price">$45.000 COP</p>
+            <div class="card-buttons">
+              <a href="views/detalle-producto.html" class="btn-secondary">Ver detalle</a>
+              <a href="views/contacto.html" class="btn-primary">Solicitar</a>
+            </div>
+          </div>
+        </article>
 
+      </div>
 
-      <article class="product-card">
-        <span class="product-badge">Sin Plástico</span>
-        <img src="img/products/glass-bottle.jpg" alt="Botella de Vidrio" onerror="this.src='https://via.placeholder.com/300x200?text=Botella+Vidrio'">
-        <h3 style="margin-top: 0.8rem;">Botella de Vidrio Térmica</h3>
-        <p style="font-size: 0.9rem; color: #666;">Funda de silicona libre de BPA. Mantiene tus bebidas frías o calientes.</p>
-        <p style="font-weight: bold; margin: 0.5rem 0; color: var(--primary-green);">$24.00 USD</p>
-        <a href="views/productos.html" class="btn btn-primary" style="width: 100%; display: block;">Ver más</a>
-      </article>
+      <div class="view-all-container">
+        <a href="views/productos.html" class="btn-view-all">Ver todos los productos</a>
+      </div>
+    </section>
 
-
-      <article class="product-card">
-        <span class="product-badge">Compostable</span>
-        <img src="img/products/beeswax-wrap.jpg" alt="Envoltorio de Cera" onerror="this.src='https://via.placeholder.com/300x200?text=Envoltorio+Cera'">
-        <h3 style="margin-top: 0.8rem;">Envoltorios de Cera de Abeja</h3>
-        <p style="font-size: 0.9rem; color: #666;">Alternativa ecológica al papel film de plástico. Reutilizables.</p>
-        <p style="font-weight: bold; margin: 0.5rem 0; color: var(--primary-green);">$15.00 USD</p>
-        <a href="views/productos.html" class="btn btn-primary" style="width: 100%; display: block;">Ver más</a>
-      </article>
-
-      <article class="product-card">
-        <span class="product-badge">Silicona BPA</span>
-        <img src="img/products/silicone-bags.jpg" alt="Bolsas de Silicona" onerror="this.src='https://via.placeholder.com/300x200?text=Bolsas+Silicona'">
-        <h3 style="margin-top: 0.8rem;">Bolsas de Silicona para Alimentos</h3>
-        <p style="font-size: 0.9rem; color: #666;">Herméticas, seguras para congelador y lavavajillas.</p>
-        <p style="font-weight: bold; margin: 0.5rem 0; color: var(--primary-green);">$24.50 USD</p>
-        <a href="views/productos.html" class="btn btn-primary" style="width: 100%; display: block;">Ver más</a>
-      </article>
-    </div>
   </main>
 
- 
   <footer class="main-footer">
-    <div class="footer-content">
-      <div>
-        <h3>🌱 EcoMarket</h3>
-        <p>Tu tienda de confianza para un estilo de vida consciente, ético y sin residuos.</p>
-      </div>
-      <div>
-        <h4>Contacto</h4>
-        <p>Email: contacto@ecomarket.com</p>
-        <p>Dirección: 123 Eco Way, Green City</p>
-      </div>
-      <div>
-        <h4>Redes Sociales</h4>
-        <p>
-          <a href="#" class="social-icon" style="display:inline-block; margin-right:0.5rem;">📷 Instagram</a>
-          <a href="#" class="social-icon" style="display:inline-block;">📘 Facebook</a>
-        </p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 EcoMarket Inc. Todos los derechos reservados.</p>
-    </div>
+    <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
   </footer>
 
 </body>
