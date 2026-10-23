@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoMarket - Catálogo de Productos</title>
-  
-  <!-- Cargar estilos usando ../ para salir de la carpeta views -->
+  <title>EcoMarket - Catálogo de Productos (Página 1)</title>
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/layout.css">
   <link rel="stylesheet" href="../css/components.css">
@@ -13,7 +11,7 @@
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Encabezado -->
   <header class="main-header">
     <a href="../index.html" class="logo">🌱 EcoMarket</a>
     <nav>
@@ -24,103 +22,209 @@
         <li><a href="contacto.html" class="nav-link">Contacto</a></li>
       </ul>
     </nav>
-    <div class="header-actions">
-      <a href="#" title="Buscar">🔍</a>
-      <a href="#" title="Carrito">🛒</a>
-    </div>
   </header>
 
-  <!-- Contenedor del Catálogo -->
-  <div class="catalog-container">
-    
-    <!-- Sidebar de Filtros (Sticky) -->
-    <aside class="sidebar-filters">
-      <h3>Filtros</h3>
-      <br>
-      <h4>Categorías</h4>
-      <ul>
-        <li><label><input type="checkbox" checked> Hogar</label></li>
-        <li><label><input type="checkbox"> Moda</label></li>
-        <li><label><input type="checkbox"> Cuidado Personal</label></li>
-        <li><label><input type="checkbox"> Alimentos</label></li>
-      </ul>
-      <br>
-      <h4>Disponibilidad</h4>
-      <ul>
-        <li><label><input type="checkbox"> En Stock</label></li>
-      </ul>
-    </aside>
+  <main class="catalog-container">
+    <section class="catalog-hero">
+      <h1>Nuestro Catálogo Sostenible</h1>
+      <p>Encuentra productos ecológicos para cuidar el planeta y tu bienestar.</p>
+    </section>
 
+    <div class="catalog-layout">
+      <!-- Barra Lateral de Filtros (Sidebar) -->
+      <aside class="sidebar-filters">
+        <h3 class="filter-title">Filtrar Productos</h3>
+        
+        <div class="filter-group">
+          <h4>Categorías</h4>
+          <label><input type="checkbox" checked> Cuidado Personal</label>
+          <label><input type="checkbox" checked> Hogar y Limpieza</label>
+          <label><input type="checkbox" checked> Estilo de Vida</label>
+        </div>
 
-    <main>
-      <div style="margin-bottom: 1.5rem;">
-        <input type="text" class="form-input" placeholder="🔍 Buscar productos ecológicos..." style="width: 100%;">
-      </div>
+        <div class="filter-group">
+          <h4>Rango de Precio</h4>
+          <label><input type="radio" name="precio"> Menos de $15.000 COP</label>
+          <label><input type="radio" name="precio"> $15.000 - $30.000 COP</label>
+          <label><input type="radio" name="precio"> Más de $30.000 COP</label>
+        </div>
 
-      <div class="products-grid">
+        <div class="filter-group">
+          <h4>Calificación Eco</h4>
+          <label><input type="checkbox"> ⭐⭐⭐⭐⭐ 100% Zero Waste</label>
+          <label><input type="checkbox"> 🌿 Biodegradable</label>
+        </div>
+      </aside>
 
-        <article class="product-card">
-          <span class="product-badge">Biodegradable</span>
-          <img src="../img/products/bamboo-brush.jpg" alt="Producto" onerror="this.src='https://via.placeholder.com/300x200?text=Cepillo+Bamb%C3%BA'">
-          <h3 style="margin-top: 0.8rem; font-size: 1.1rem;">Cepillo de Bambú</h3>
-          <p style="font-weight: bold; color: var(--primary-green); margin: 0.4rem 0;">$12.00 USD</p>
-          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
-            <button class="btn btn-primary" style="flex: 1;">Añadir</button>
-            <button class="btn-fav" title="Favorito">❤️</button>
-          </div>
-        </article>
+      <!-- Cuadrícula de Productos (Primeros 10) -->
+      <section class="catalog-main-content">
+        <div class="product-grid">
 
-        <article class="product-card">
-          <span class="product-badge">BPA Free</span>
-          <img src="../img/products/silicone-bags.jpg" alt="Producto" onerror="this.src='https://via.placeholder.com/300x200?text=Bolsas+Silicona'">
-          <h3 style="margin-top: 0.8rem; font-size: 1.1rem;">Bolsas de Silicona</h3>
-          <p style="font-weight: bold; color: var(--primary-green); margin: 0.4rem 0;">$24.50 USD</p>
-          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
-            <button class="btn btn-primary" style="flex: 1;">Añadir</button>
-            <button class="btn-fav" title="Favorito">❤️</button>
-          </div>
-        </article>
+          <article class="product-card">
+            <a href="detalle-producto.html">
+              <img src="../img/products/cepillo de bambu.jpg" alt="Cepillo de Bambú" class="product-img">
+            </a>
+            <div class="product-info">
+              <span class="product-tag">Cuidado Personal</span>
+              <h3><a href="detalle-producto.html" class="product-title-link">Cepillo de Bambú</a></h3>
+              <p class="product-price">$12.000 COP</p>
+              <div class="card-buttons">
+                <a href="detalle-producto.html" class="btn-secondary">Ver detalle</a>
+                <a href="contacto.html" class="btn-primary">Solicitar</a>
+              </div>
+            </div>
+          </article>
 
-        <article class="product-card">
-          <span class="product-badge">Algodón Orgánico</span>
-          <img src="../img/products/cotton-bags.jpg" alt="Producto" onerror="this.src='https://via.placeholder.com/300x200?text=Bolsas+Malla'">
-          <h3 style="margin-top: 0.8rem; font-size: 1.1rem;">Bolsas de Malla</h3>
-          <p style="font-weight: bold; color: var(--primary-green); margin: 0.4rem 0;">$18.00 USD</p>
-          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
-            <button class="btn btn-primary" style="flex: 1;">Añadir</button>
-            <button class="btn-fav" title="Favorito">❤️</button>
-          </div>
-        </article>
+          <article class="product-card">
+            <a href="detalle-producto.html">
+              <img src="../img/products/shampoo solido natural.jpg" alt="Shampoo Sólido Natural" class="product-img">
+            </a>
+            <div class="product-info">
+              <span class="product-tag">Cuidado Personal</span>
+              <h3><a href="detalle-producto.html" class="product-title-link">Shampoo Sólido Natural</a></h3>
+              <p class="product-price">$25.000 COP</p>
+              <div class="card-buttons">
+                <a href="detalle-producto.html" class="btn-secondary">Ver detalle</a>
+                <a href="contacto.html" class="btn-primary">Solicitar</a>
+              </div>
+            </div>
+          </article>
 
-        <article class="product-card">
-          <span class="product-badge">Sin Plástico</span>
-          <img src="../img/products/shampoo-bar.jpg" alt="Producto" onerror="this.src='https://via.placeholder.com/300x200?text=Shampoo+S%C3%B3lido'">
-          <h3 style="margin-top: 0.8rem; font-size: 1.1rem;">Shampoo Sólido</h3>
-          <p style="font-weight: bold; color: var(--primary-green); margin: 0.4rem 0;">$14.00 USD</p>
-          <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
-            <button class="btn btn-primary" style="flex: 1;">Añadir</button>
-            <button class="btn-fav" title="Favorito">❤️</button>
-          </div>
-        </article>
-      </div>
+          <article class="product-card">
+            <a href="detalle-producto.html">
+              <img src="../img/products/Desodorante Natural en Crema.jpg" alt="Desodorante Natural" class="product-img">
+            </a>
+            <div class="product-info">
+              <span class="product-tag">Cuidado Personal</span>
+              <h3><a href="detalle-producto.html" class="product-title-link">Desodorante Natural en Crema</a></h3>
+              <p class="product-price">$20.000 COP</p>
+              <div class="card-buttons">
+                <a href="detalle-producto.html" class="btn-secondary">Ver detalle</a>
+                <a href="contacto.html" class="btn-primary">Solicitar</a>
+              </div>
+            </div>
+          </article>
 
+          <article class="product-card">
+            <a href="detalle-producto.html">
+              <img src="../img/products/acondicionador solido.png" alt="Acondicionador Sólido" class="product-img">
+            </a>
+            <div class="product-info">
+              <span class="product-tag">Cuidado Personal</span>
+              <h3><a href="detalle-producto.html" class="product-title-link">Acondicionador Sólido</a></h3>
+              <p class="product-price">$24.000 COP</p>
+              <div class="card-buttons">
+                <a href="detalle-producto.html" class="btn-secondary">Ver detalle</a>
+                <a href="contacto.html" class="btn-primary">Solicitar</a>
+              </div>
+            </div>
+          </article>
 
-      <div style="display: flex; justify-content: center; gap: 0.5rem; margin-top: 2rem;">
-        <a href="#" class="btn" style="border: 1px solid var(--gray-border);">Anterior</a>
-        <a href="#" class="btn btn-primary">1</a>
-        <a href="#" class="btn" style="border: 1px solid var(--gray-border);">2</a>
-        <a href="#" class="btn" style="border: 1px solid var(--gray-border);">Siguiente</a>
-      </div>
-    </main>
+          <article class="product-card">
+            <a href="detalle-producto.html">
+              <img src="../img/products/jabon artesanal de avena.webp" alt="Jabón Artesanal de Avena" class="product-img">
+            </a>
+            <div class="product-info">
+              <span class="product-tag">Cuidado Personal</span>
+              <h3><a href="detalle-producto.html" class="product-title-link">Jabón Artesanal de Avena</a></h3>
+              <p class="product-price">$15.000 COP</p>
+              <div class="card-buttons">
+                <a href="detalle-producto.html" class="btn-secondary">Ver detalle</a>
+                <a href="contacto.html" class="btn-primary">Solicitar</a>
+              </div>
+            </div>
+          </article>
 
-  </div>
+          <article class="product-card">
+            <a href="detalle-producto.html">
+              <img src="../img/products/Discos Desmaquillantes Reutilizables.jpg" alt="Discos Desmaquillantes" class="product-img">
+            </a>
+            <div class="product-info">
+              <span class="product-tag">Cuidado Personal</span>
+              <h3><a href="detalle-producto.html" class="product-title-link">Discos Desmaquillantes</a></h3>
+              <p class="product-price">$18.000 COP</p>
+              <div class="card-buttons">
+                <a href="detalle-producto.html" class="btn-secondary">Ver detalle</a>
+                <a href="contacto.html" class="btn-primary">Solicitar</a>
+              </div>
+            </div>
+          </article>
 
+          <article class="product-card">
+            <a href="detalle-producto.html">
+              <img src="../img/products/Esponja Vegetal de Luffa.jpg" alt="Esponja Vegetal de Luffa" class="product-img">
+            </a>
+            <div class="product-info">
+              <span class="product-tag">Hogar y Aseo</span>
+              <h3><a href="detalle-producto.html" class="product-title-link">Esponja Vegetal de Luffa</a></h3>
+              <p class="product-price">$15.000 COP</p>
+              <div class="card-buttons">
+                <a href="detalle-producto.html" class="btn-secondary">Ver detalle</a>
+                <a href="contacto.html" class="btn-primary">Solicitar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a href="detalle-producto.html">
+              <img src="../img/products/Detox de Cocina .jpg" alt="Detox de Cocina" class="product-img">
+            </a>
+            <div class="product-info">
+              <span class="product-tag">Hogar</span>
+              <h3><a href="detalle-producto.html" class="product-title-link">Detox de Cocina</a></h3>
+              <p class="product-price">$22.000 COP</p>
+              <div class="card-buttons">
+                <a href="detalle-producto.html" class="btn-secondary">Ver detalle</a>
+                <a href="contacto.html" class="btn-primary">Solicitar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a href="detalle-producto.html">
+              <img src="../img/products/Detergente Ecológico en Hojas.png" alt="Detergente Ecológico" class="product-img">
+            </a>
+            <div class="product-info">
+              <span class="product-tag">Hogar</span>
+              <h3><a href="detalle-producto.html" class="product-title-link">Detergente en Hojas</a></h3>
+              <p class="product-price">$28.000 COP</p>
+              <div class="card-buttons">
+                <a href="detalle-producto.html" class="btn-secondary">Ver detalle</a>
+                <a href="contacto.html" class="btn-primary">Solicitar</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <a href="detalle-producto.html">
+              <img src="../img/products/Servilletas de Tela Reutilizables.webp" alt="Servilletas de Tela" class="product-img">
+            </a>
+            <div class="product-info">
+              <span class="product-tag">Hogar</span>
+              <h3><a href="detalle-producto.html" class="product-title-link">Servilletas de Tela</a></h3>
+              <p class="product-price">$16.000 COP</p>
+              <div class="card-buttons">
+                <a href="detalle-producto.html" class="btn-secondary">Ver detalle</a>
+                <a href="contacto.html" class="btn-primary">Solicitar</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Paginación a la Página 2 -->
+        <nav class="pagination" aria-label="Navegación de productos">
+          <a href="#" class="page-link disabled">&laquo; Anterior</a>
+          <a href="productos.html" class="page-link active">1</a>
+          <a href="productos-p2.html" class="page-link">2</a>
+          <a href="productos-p2.html" class="page-link">Siguiente &raquo;</a>
+        </nav>
+      </section>
+    </div>
+  </main>
 
   <footer class="main-footer">
-    <div class="footer-bottom">
-      <p>&copy; 2026 EcoMarket Inc. Todos los derechos reservados.</p>
-    </div>
+    <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
   </footer>
-
 </body>
 </html>
