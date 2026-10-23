@@ -3,53 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoMarket - Sobre Nosotros</title>
+  <meta name="description" content="Conoce la historia, la misión y el impacto ambiental de EcoMarket.">
+  <title>Sobre Nosotros - EcoMarket</title>
   <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/layout.css">
   <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/animations.css">
 </head>
 <body>
+  <a class="eco-skip-link" href="#contenido">Saltar al contenido</a>
 
-  <!-- Encabezado -->
   <header class="main-header">
-    <a href="../index.html" class="logo">🌱 EcoMarket</a>
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="../index.html" class="nav-link">Inicio</a></li>
-        <li><a href="productos.html" class="nav-link">Productos</a></li>
-        <li><a href="sobre-nosotros.html" class="nav-link active">Nosotros</a></li>
-        <li><a href="contacto.html" class="nav-link">Contacto</a></li>
-      </ul>
+    <a class="logo" href="../index.html">EcoMarket</a>
+    <nav class="nav-menu" aria-label="Principal">
+      <a class="nav-link" href="../index.html">Inicio</a>
+      <a class="nav-link" href="productos.html">Catálogo</a>
+      <a class="nav-link" href="sobre-nosotros.html" aria-current="page">Sobre Nosotros</a>
+      <a class="nav-link" href="contacto.html">Contacto</a>
     </nav>
   </header>
 
-  <main class="catalog-container">
-    <section class="about-hero">
-      <h1>Nuestra Misión Verde</h1>
-      <p>Creemos en un futuro donde el consumo diario no comprometa al planeta.</p>
-    </section>
+  <main id="contenido" class="main-home-container">
 
-    <section class="about-content-grid">
-      <div class="about-card">
-        <h3>🌱 Nuestra Historia</h3>
-        <p>EcoMarket nació como una iniciativa para facilitar el acceso a productos de uso diario libres de plástico, promoviendo alternativas biodegradables y duraderas.</p>
-      </div>
-
-      <div class="about-card">
-        <h3>🌍 Compromiso Ambiental</h3>
-        <p>Trabajamos con productores locales e insumos sostenibles, reduciendo la huella de carbono y eliminando empaques de un solo uso.</p>
-      </div>
-
-      <div class="about-card">
-        <h3>♻️ Filosofía Zero Waste</h3>
-        <p>Fomentamos el reúso, el reciclaje y la reutilización responsable a través de cada uno de los productos de nuestro catálogo.</p>
+    <section class="hero-section" aria-labelledby="titulo-historia">
+      <h1 id="titulo-historia">Sobre EcoMarket</h1>
+      <!-- REEMPLAZAR por la historia real del proyecto -->
+      <p>EcoMarket nació de una idea sencilla: que comprar productos del día a día no tenga que dejar basura. Empezamos con unos pocos artículos reutilizables y hoy reunimos opciones sustentables para el hogar, el cuidado personal y la cocina.</p>
+      <p><strong>Nuestra misión:</strong> hacer que vivir de forma sustentable sea fácil, accesible y cercano, con productos responsables para las personas y para el planeta.</p>
+      <div class="hero-buttons">
+        <a class="btn-hero-primary" href="productos.html">Ver catálogo</a>
+        <a class="btn-hero-secondary" href="contacto.html">Escríbenos</a>
       </div>
     </section>
+
+    <section aria-labelledby="titulo-valores">
+      <h2 id="titulo-valores" class="eco-section-title">Nuestros valores</h2>
+      <div class="about-content-grid">
+        <article class="about-card">
+          <h3>Cero residuos</h3>
+          <p>Priorizamos productos reutilizables, compostables y con empaques mínimos para reducir lo que termina en la basura.</p>
+        </article>
+        <article class="about-card">
+          <h3>Comercio justo</h3>
+          <p>Trabajamos con productores que pagan salarios dignos y cuidan las condiciones de quienes fabrican cada producto.</p>
+        </article>
+        <article class="about-card">
+          <h3>Materiales 100% naturales</h3>
+          <p>Elegimos bambú, algodón orgánico, cera de abeja y otros materiales de origen natural, libres de plásticos innecesarios.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="titulo-impacto">
+      <h2 id="titulo-impacto" class="eco-section-title">Nuestro impacto ambiental</h2>
+      <!-- REEMPLAZAR todas las cifras por datos reales -->
+      <ul class="eco-stats">
+        <li><strong class="eco-stat__num">+5.000</strong><span>botellas de plástico evitadas</span></li>
+        <li><strong class="eco-stat__num">+2.500</strong><span>bolsas plásticas reemplazadas</span></li>
+        <li><strong class="eco-stat__num">+1.200</strong><span>familias que ya compran con nosotros</span></li>
+        <li><strong class="eco-stat__num">100%</strong><span>de empaques reciclables</span></li>
+      </ul>
+    </section>
+
   </main>
 
   <footer class="main-footer">
-    <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+    <div class="footer-bottom">
+      <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+    </div>
   </footer>
-
 </body>
 </html>

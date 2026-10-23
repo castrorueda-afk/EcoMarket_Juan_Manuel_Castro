@@ -119,3 +119,7 @@
   padding-top: 1rem;
   font-size: 0.9rem;
 }
+.eco-carousel {
+  max-width: 68rem;
+  margin-inline: auto;
+}
