@@ -4,7 +4,8 @@
 
 Sitio web de un e-commerce de productos sustentables, desarrollado con **HTML5 y CSS3 puro** (sin frameworks ni JavaScript). Presenta un catálogo de 20 productos ecológicos para el cuidado personal, el hogar y el estilo de vida, junto con la historia, los valores y las opiniones de clientes de la marca.
 
-🌐 **Sitio en vivo:** https://TU-SITIO.netlify.app <!-- REEMPLAZAR por tu URL real de Netlify -->
+🌐 **Sitio en vivo:** https://6adae55f7b8c3ff1b722eb01--moonlit-cassata-71deec.netlify.app/
+
 
 > Proyecto académico. Los filtros del catálogo son visuales y los testimonios son ficticios.
 
